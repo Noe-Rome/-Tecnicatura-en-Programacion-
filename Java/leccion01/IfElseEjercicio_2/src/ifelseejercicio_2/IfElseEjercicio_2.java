@@ -1,0 +1,26 @@
+
+package ifelseejercicio_2;
+
+import java.util.Scanner;
+
+public class IfElseEjercicio_2 {
+
+    public static void main(String[] args) {
+       Scanner teclado = new Scanner(System.in);
+       double compra, descuento, precioFinal;
+        System.out.println("Digite la cantidad a pagar: ");
+        compra = teclado.nextDouble();
+        
+        if (compra > 100){
+            descuento = compra * 0.2;
+        }
+        else{
+            descuento = 0;
+        }
+        precioFinal = compra - descuento;
+        System.out.println("El precio a pagar es: " + precioFinal);
+        
+        teclado.close();
+    }
+    
+}
